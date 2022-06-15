@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    
+    color: rgb(255, 255, 255);
+    background-color: #333;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100vh;
+   
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+  
+    
+  
+ 
+    
+    
+ 
+    
+}
+.music-container{
+    display: grid;
+    grid-template-columns: 320px 3fr;
+   
+  
+}
+.dashboard{
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(12rem);
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 100vh;
+    
+   
+  
+    
+}
+.fa-solidd{
+    position:absolute;
+    bottom: 8px;
+   right: 15px;
+   font-size: 15px;
+}
+.search-bar{
+    position: relative;
+}
+.my-music{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+}
+.groove-music h6{
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.search-bar{
+    max-width: 280px;
+    height: 35px;
+    margin-bottom: 10px;
+    
+
+
+}
+input[type=search]{
+    width: 100%;
+    height: 35px;
+    outline:none ;
+    border: 0;
+    padding: 10px;
+    background-color: rgba(19, 19, 19, 0.671);
+  
+}
+input::placeholder{
+    color: rgba(255, 255, 255, 0.668);
+}
+input[type=search]:focus{
+    background-color: white;
+    border: 1px solid white;
+}
+input:focus::placeholder{
+    color: gray;
+}
+.dash{
+    
+    transition: all 0.3s ease-in;
+    margin-left: -15px;
+    padding: 18px;
+    
+    font-size: 20px;
+    font-weight: 100;
+   
+}
+.dash.active{
+    border-left: 4px solid gray;
+    margin-left: -15px;
+}
+.dash:hover{
+    background-color: rgba(128, 128, 128, 0.472);
+}
+.Settings{
+    position: absolute;
+   bottom:50px;
+   left: 0;
+   font-size: 20px;
+}
+hr{
+  
+    background-color:rgba(128, 128, 128, 0.472);
+    border: 0;
+    height: 1px;
+}
+.my-music{
+    padding: 20px;
+   
+}
+h5{
+    font-weight: 300;
+}
+.my-music h3{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+.selection{
+    display: flex;
+}
+.selection h4{
+    margin-right: 40px;
+    font-size: 20px;
+    padding-bottom: 5px;
+    
+}
+.selection a{
+    position: relative;
+  color:gray;
+}
+.selection a:hover{
+    color: white;
+}
+.selection a::after{
+    content: '';
+    position: absolute;
+    background-color: gray;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+.selection a:hover::after {
+    
+
+    width: 100%;
+}
+.sort{
+    display: flex;
+    font-weight: 100;
+    
+}
+.sort h4{   
+    margin-right: 20px;
+    padding: 25px 0;
+}
+.find{
+    padding: 20px 0;
+  
+}
+.find h6{
+    margin-top: 5px;
+
+}
+.find h4{
+    float: right;
+}
+.details{
+ display: grid;
+ grid-template-columns: 30% 22% 22% 5% 20% 10%;
+    margin-left: 30px;
+    font-size: 16px;
+ 
+    
+    padding: 18px;
+    padding-right: 30px;
+}
+.musics ul li:nth-child(odd){
+    background-color: rgba(128, 128, 128, 0.218);
+}
+.musics{
+    margin-top: 10px;
+}
+.details h5{
+    text-align: left;
+}
+.span{
+    color: gray;
+    font-size: 12px;
+}
+
+img{
+    width: 100px;
+}
+.iconify{
+    display: flex;
+    align-items: center;
+}
+.iconify i{
+    margin-right: 15px;
+    font-size: 18px;
+    
+}
+.fa-light{
+    margin-left: 180px;
+}
+.shuffle{
+    display: flex;
+    align-items: center;
+}
+.shuffle i{
+    margin-right: 8px;
+}
+.show{
+    margin-left: 18px;
+}
+.playing{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    
+}
+.music-info{
+    display: flex;
+    align-items: center;
+    
+}
+button{
+    background-color: transparent;
+    color: white;
+    border: 0;
+}
+button i{
+    font-size: 25px;
+}
+.progress-container{
+    height:2px;
+    width: 400px;
+    background-color: rgba(214, 214, 214, 0.316);
+    border-radius: 50px;
+   
+}
+.progress-container .progress{
+    height:inherit;
+    width:0;
+    border-radius: inherit;
+    background-color: white;
+    position: relative;
+}
+.progress-container .progress::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    top: 50%;
+    height: 15px;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    box-sizing: inherit;
+    right: -5px;
+
+}
+
+.sing-play{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.timer span{
+ margin: 170px;
+
+
+}
